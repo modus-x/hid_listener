@@ -21,8 +21,8 @@ get_filename_component(SHARED_INC ${CMAKE_CURRENT_SOURCE_DIR}/../shared ABSOLUTE
 find_package(X11 REQUIRED)
 
 add_library(${PLUGIN_NAME} SHARED
-  "${SHARED_INC}/dart-sdk/include/dart_api_dl.h"
-  "${SHARED_INC}/dart-sdk/include/dart_api_dl.c"
+  # "${SHARED_INC}/dart-sdk/include/dart_api_dl.h"
+  # "${SHARED_INC}/dart-sdk/include/dart_api_dl.c"
   "hid_listener_plugin.cpp"
   "hid_listener_plugin_linux.cpp"
 )
